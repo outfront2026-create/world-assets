@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enroll — World Assets Trading Strategy</title>
+  <meta name="description" content="Pay Ksh 3,000 for the World Assets one-week Binance futures cohort. Bitcoin, Ethereum, and Solana. 300 seats.">
+  <meta name="theme-color" content="#070a08">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23070a08'/%3E%3Crect x='2' y='2' width='12' height='12' fill='none' stroke='%23c8ff3d' stroke-width='2'/%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span> World Assets</a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="index.html#week">The week</a>
+        <a href="index.html#guide">How we trade</a>
+        <a href="index.html#bots">Bots</a>
+        <a href="enroll.html" aria-current="page">Enroll</a>
+        <a class="btn btn-small" href="#pay">Pay Ksh 3,000</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="checkout">
+    <div class="wrap">
+      <p class="kicker">Seat payment</p>
+      <h1>Enroll now</h1>
+      <p class="page-lead">You are paying for the World Assets trading strategy. One week on Binance futures, limited to Bitcoin, Ethereum, and Solana. The cohort holds 300 members.</p>
+
+      <div class="pay-grid" id="pay">
+        <aside class="sheet">
+          <p class="pay-kicker">Amount due</p>
+          <p class="amount"><span>Ksh</span>3,000</p>
+          <p class="spec-label">Kenya shillings · one seat</p>
+          <dl class="rows">
+            <div>
+              <dt>Program</dt>
+              <dd>Trading strategy</dd>
+            </div>
+            <div>
+              <dt>Length</dt>
+              <dd>One week</dd>
+            </div>
+            <div>
+              <dt>Markets</dt>
+              <dd>BTC · ETH · SOL</dd>
+            </div>
+            <div>
+              <dt>Exchange</dt>
+              <dd>Binance futures</dd>
+            </div>
+            <div>
+              <dt>Cohort cap</dt>
+              <dd>300</dd>
+            </div>
+            <div>
+              <dt>Bots</dt>
+              <dd>Quoted apart</dd>
+            </div>
+          </dl>
+          <div id="pay-dest" class="pay-dest">
+            <p class="spec-label">M-Pesa Send Money</p>
+            <p class="pay-number">0794 612 206</p>
+            <p class="fine">Name on the line: World Assets</p>
+          </div>
+          <ol class="steps">
+            <li>Send Ksh 3,000 by M-Pesa to the number or paybill shown in this card.</li>
+            <li>Use the receipt code as the account reference, and your full name if the line asks for one.</li>
+            <li>Paste the M-Pesa code into the form, then copy the receipt and keep the SMS.</li>
+          </ol>
+          <p class="fine">Includes goals such as Ksh 300 daily, depending on your capital, risk, and market conditions. The fee is the seat. It is not the money you trade with.</p>
+        </aside>
+
+        <div class="sheet">
+          <noscript class="noscript">JavaScript is off, so the receipt will not build. The amount is still Ksh 3,000 by M-Pesa to World Assets.</noscript>
+          <form id="seat-form" novalidate>
+            <p class="pay-kicker">Your details</p>
+            <div class="form-row">
+              <label for="name">Full name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+              <p class="error" id="name-error" hidden></p>
+            </div>
+            <div class="form-row">
+              <label for="phone">WhatsApp number</label>
+              <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="0712 345 678" required>
+              <p class="error" id="phone-error" hidden></p>
+            </div>
+            <div class="form-row">
+              <label for="email">Email, if you have one</label>
+              <input id="email" name="email" type="email" inputmode="email" autocomplete="email">
+              <p class="error" id="email-error" hidden></p>
+            </div>
+            <div class="form-row">
+              <label for="mpesa">M-Pesa code, after you pay</label>
+              <input id="mpesa" name="mpesa" type="text" autocapitalize="characters" placeholder="SK12AB34CD" maxlength="10">
+              <p class="error" id="mpesa-error" hidden></p>
+            </div>
+            <div class="checks">
+              <label>
+                <input id="bot" name="bot" type="checkbox">
+                <span>Also quote me a World Assets bot. This is separate from the Ksh 3,000 seat.</span>
+              </label>
+              <label>
+                <input id="fee-ok" name="fee-ok" type="checkbox">
+                <span>I am paying Ksh 3,000 for this one-week seat.</span>
+              </label>
+              <p class="error" id="fee-ok-error" hidden></p>
+              <label>
+                <input id="risk-ok" name="risk-ok" type="checkbox">
+                <span>I understand futures can liquidate a position, and that Ksh 300 a day is a goal that depends on my capital, my risk, and market conditions.</span>
+              </label>
+              <p class="error" id="risk-ok-error" hidden></p>
+            </div>
+            <p class="form-note" id="enroll-note">Your name, WhatsApp number, email, and M-Pesa code are added to the private World Assets enrollment sheet. Copy the receipt and keep the M-Pesa SMS. A seat is confirmed when the Ksh 3,000 payment is matched.</p>
+            <button class="btn btn-block" type="submit">Build my receipt</button>
+          </form>
+
+          <div class="receipt" id="receipt" hidden>
+            <h2>Your receipt</h2>
+            <p class="form-note">Pay the amount on the left if you have not yet. Put this receipt code in the M-Pesa reference.</p>
+            <p class="form-note list-status" id="list-status" hidden></p>
+            <pre id="receipt-body"></pre>
+            <div class="receipt-actions noprint">
+              <button class="linkish" id="copy-receipt" type="button">Copy receipt</button>
+              <a class="linkish" id="wa-receipt" hidden href="#">Send on WhatsApp</a>
+              <button class="linkish" type="button" onclick="window.print()">Print</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <p class="legal-title">World Assets</p>
+      <p>Futures trading can wipe out a position. The Ksh 300 daily line is a goal and it moves with your capital, your risk, and the market. World Assets does not custody client funds and does not ask for withdrawal access. Binance is a separate exchange.</p>
+      <p><a href="index.html">Back to the program</a> · © <span id="year">2026</span> World Assets</p>
+    </div>
+  </footer>
+  <script src="js/site.js"></script>
+</body>
+</html>
